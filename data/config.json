@@ -1,7 +1,7 @@
 {
     "Config": {
-        "token": "ODQ5NTk4MDQ5NDExNzkyOTA3.YLdf1w.ia5LBW13AD_IDO_k6B9MUVH2Bbc",
-        "prefix": "!",
+        "token": "ODQ5NTk4MDQ5NDExNzkyOTA3.YLdf1w.SECFWBYe1XcTuSWs-n8SzUxNaQQ",
+        "prefix": "p.",
         "ownerID": "777202501283610624",
         "spreadSheetID": "129PlRxoHVYjMHUXiieMT6_AQIiGq02QeXcBQe17qhN4",
         "invite": "https://discord.com/oauth2/authorize?client_id=849598049411792907&permissions=67501121&scope=bot"
