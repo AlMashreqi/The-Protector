@@ -23,7 +23,12 @@ module.exports = {
 			if (id === row.ID) {
 				row['Name'] = target.username;
 				updated_date = new Date(row['Last Updated'])
-				if (today.getDate() - updated_date.getDate() >= 2) {
+				if (today.getDate() == updated_date.getDate()) {
+					row.save();
+					message.reply("Habibi/Habibti, You have already done hifz for today, Come Back tomorrow.")
+					return
+				}
+				if (today.getDate() - updated_date.getDate() >= 3) {
 					row['Current Streak'] = 1;
 				} else {
 					row['Current Streak'] = parseInt(row['Current Streak']) + 1;
