@@ -2,7 +2,6 @@ require('module-alias/register')
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const keepAlive = require("@root/host.js");
 
 const config = require("@data/config.json");
 const loadCommands = require("@root/commands/load-commands")
@@ -32,5 +31,4 @@ client.on("ready", async () => {
 
 });
 
-keepAlive();
 client.login(config.Config.token);
