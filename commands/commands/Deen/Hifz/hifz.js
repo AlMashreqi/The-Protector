@@ -1,5 +1,6 @@
 const config = require("@data/config");
 const credentials = require("@data/credentials");
+const moment = require("moment");
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 module.exports = {
@@ -23,7 +24,8 @@ module.exports = {
 			if (id === row.ID) {
 				row['Name'] = target.username;
 				updated_date = new Date(row['Last Updated'])
-				if (today.getDate() == updated_date.getDate()) {
+				updated_date_timely = new moment(row['Last Updated'])
+				if (moment().diff(updated_date_timely, "hours") < 12) {
 					row.save();
 					message.reply("Habibi/Habibti, You have already done hifz for today, Come Back tomorrow.")
 					return

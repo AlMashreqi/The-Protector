@@ -23,6 +23,7 @@
     "google-spreadsheet": "^3.1.15",
     "googleapis": "^72.0.0",
     "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
     "mongoose": "^5.12.10",
     "node-fetch": "^2.6.1",
     "redis": "^3.1.2",
