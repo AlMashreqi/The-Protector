@@ -27,7 +27,7 @@ module.exports = {
 				updated_date_timely = new moment(row['Last Updated'])
 				if (moment().diff(updated_date_timely, "hours") < 12) {
 					row.save();
-					message.reply("Habibi/Habibti, You have already done hifz for today, Come Back tomorrow.")
+					message.reply("Habibi/Habibti, You have already done hifz for today, Come Back later.")
 					return
 				}
 				if (today.getDate() - updated_date.getDate() >= 3) {

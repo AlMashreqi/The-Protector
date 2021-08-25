@@ -30,7 +30,6 @@ module.exports = {
 				row['Current Streak'] = cs;
 				row['Longest Streak'] = ls;
 				row['Total Days'] = td;
-				row['Last Updated'] = today;
 				row.save()
 				message.channel.send(
 					`__**Updated The Profile:**__\n__**Name:**__ ${target.username}\n__**Current Streak:**__ ${row['Current Streak']}\n__**Longest Streak:**__ ${row['Longest Streak']}\n__**Total Days:**__ ${row['Total Days']}`
